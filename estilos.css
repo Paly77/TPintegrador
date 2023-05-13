@@ -1,115 +1,154 @@
-*{
-    padding:0;
-    margin:0;
-    box-sizing:border-box;
-}
-
-body{
-    width: 100%;
-    margin: 0 auto;
-}
-
-.nav-container{
-    background-color: grey;
-    border: 1px solid #333;
-    display: flex;
-    justify-content: space-between;
-}
-
-.right-side, .left-side{
-    list-style-type:none;
-}
-
-.right-side li, .left-side li{
-    display:inline-block;
-}
-
-.right-side li a, .left-side li a{
-    text-decoration: none;
-    display: block;
-    width: 100%;
-    height:  100%;
+/* tamaño de la fuente del nav */
+.size {
     font-size: 15px;
+}
+/*color del nav*/
+nav{
+    background-color: grey;
+}
+
+/* color de comprar tickets */
+.verdee{
+    color: rgb(24, 183, 117);
+}
+
+/* fondo de imagen */
+.oscuro{
+    background-color: rgb(27, 27, 27);
+    }
+
+ /* Conf. Bs As hacia la derecha */
+h2{
+  text-align: right;
+  font-weight: bold;
+ }    
+
+ /* texto encima de la imagen a la derecha */
+.texto{
+    text-align: right;
+}
+
+/* oraciones card centrados */
+.oraciones{
+    text-align: center;
+    font-size: 15px;
+}
+
+
+/* orador oradores */
+h6{
+    font-size: 30px;
+}
+
+/* botones sobre imagen */
+.botones{
+    padding-left: 6%;
+    padding-bottom: 6%;
+}
+
+
+/* boton amarillo */
+.btn-primary-amarillo{
+    background-color: rgb(156, 156, 86);
+    font-weight: bold;
+}
+
+/* boton celeste */
+.btn-secondary-celeste{
+    background-color: lightskyblue;
+    font-weight: bold;
+}
+
+ /* boton gris */
+.btn-secondary-gris{
+    background-color: grey;
+    font-weight: bold;
+}
+
+/* boton rojo */
+.btn-secondary-rojo{
+    background-color: rgb(183, 65, 65);
+    font-weight: bold;
+}
+
+/* tamaño de las cartas */
+.col11{
+height: 500px;
+width: 300px;
+}
+
+/* posicion del conjunto de cartas */
+.posicionCartas{
+ justify-content: center;
+ padding-bottom: 50px;
+}
+
+.fondo-honolulu{
+    background-color: #353A40;
     color: white;
-    padding: 14px 16px;
-    font-weight: bold ;
 }
 
-.right-side li a :hover, .left-side li a :hover{
-    background-color: beige;
-}
-.brand img{
-    width: 70px;
-    height: 50px;
+.recordar{
+    font-size: 10px;
 }
 
-.container-card{
-	width: 80%;
-	display: flex;
-	max-width: 2000px;
-	margin: auto;
+.enviar{
+    display: flex;
+    justify-content: center;
 }
-.title-cards{
-	width: 80%;
-	max-width: 1050px;
-	margin: auto;
-	padding: 20px;
-	margin-top: 20px;
-	text-align: center;
-	color: #7a7a7a;
+
+.botonEnviar{
+    background-color: #96C93E;
+    margin-bottom: 10px;
+    border-radius: 5px ;
+    text-align: center;
+    border: 0px;  
+    height: 40px;
+    color: white;
 }
-.card{
-	width: 100%;
-	margin: 20px;
-	border-radius: 6px;
-	overflow: hidden;
-	background:#fff;
-	box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
-	transition: all 400ms ease-out;
-	cursor: default;
+ 
+ .posicion{
+    padding-bottom: 20px;
+} 
+
+.colorFooter{
+    background-color: #1E5170;
+    color: white;
+    padding: 15px;
 }
-.card:hover{
-	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
-	transform: translateY(-3%);
+
+@media (max-width: 575.9px){
+    .texto{
+        font-size: 5px;
+    }
 }
-.card img{
-	width: 100%;
-	height: 210px;
+
+@media (min-width: 576px) and (max-width: 767.9px){
+    .texto{
+        font-size: 10px;
+    }
 }
-.card .contenido-card{
-	padding: 15px;
-	text-align: center;
+
+@media (min-width: 768px) and (max-width: 991.9px) {
+    .texto{
+        font-size: 10px;
+    }
 }
-.card .contenido-card h3{
-	margin-bottom: 15px;
-	color: #7a7a7a;
+
+@media (min-width: 992px) and (max-width: 1199.9px) {
+    .texto{
+        font-size: 15px;
+    }
 }
-.card .contenido-card p{
-	line-height: 1.8;
-	color: #6a6a6a;
-	font-size: 14px;
-	margin-bottom: 5px;
+
+@media (min-width: 1200px) and (max-width: 1399.9px ){
+    .texto{
+        font-size: 20px;
+    }
 }
-.card .contenido-card a{
-	display: inline-block;
-	padding: 10px;
-	margin-top: 10px;
-	text-decoration: none;
-	color: #2fb4cc;
-	border: 1px solid #2fb4cc;
-	border-radius: 4px;
-	transition: all 400ms ease;
-	margin-bottom: 5px;
-}
-.card .contenido-card a:hover{
-	background: #2fb4cc;
-	color: #fff;
-}
-@media only screen and (min-width:200px) and (max-width:700px){
-	.container-card{
-		flex-wrap: wrap;
-	}
-	.card{
-		margin: 15px;
-	}
+
+@media (min-width: 1400px) {
+    .texto{
+        font-size: 20px;
+    }
 }
